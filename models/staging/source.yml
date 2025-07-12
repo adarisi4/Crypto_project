@@ -1,0 +1,57 @@
+version: 2
+
+sources:
+  - name: crypto_schema     
+    database: CRYPTO_ANALYTICS_DB
+    schema: RAW
+    tables:
+      - name: crypto_snapshot
+        description: "Snapshot of cryptocurrency data using CoinMarketCap API pulled on 7/3/25"
+        columns:
+          - name: id
+            description: "ID that uniquely identifies each cryptocurrency."
+          - name: name
+            description: "Name of each cryptocurrency."
+          - name: symbol
+            description: "Symbol that uniquely identifies each cryptocurrency."
+          - name: slug
+            description: "URL-friendly identifier of the cryptocurrency."
+          - name: date_added
+            description: "The date the cryptocurrency was added to CoinMarketCap."
+          - name: max_supply
+            description: "Maximum number of coins that can ever exist for the cryptocurrency."
+          - name: circulating_supply
+            description: "The number of coins currently circulating in the market."
+          - name: total_supply
+            description: "Total coins existing currently, including locked or reserved ones."
+          - name: infinite_supply
+            description: "Indicates whether the cryptocurrency has an infinite supply."
+          - name: cmc_rank
+            description: "Current rank of the cryptocurrency based on market cap."
+          - name: self_reported_circulating_supply
+            description: "Circulating supply reported by the project team."
+          - name: self_reported_market_cap
+            description: "Market cap reported by the project team."
+          - name: last_updated
+            description: "The timestamp when the data was last updated."
+          - name: quote_usd_price
+            description: "Current price of the cryptocurrency in USD."
+          - name: quote_usd_volume_24h
+            description: "Total 24-hour trading volume in USD."
+          - name: quote_usd_volume_change_24h
+            description: "Percentage change in 24-hour trading volume."
+          - name: quote_usd_percent_change_1h
+            description: "Price percentage change in the last 1 hour."
+          - name: quote_usd_percent_change_24h
+            description: "Price percentage change in the last 24 hours."
+          - name: quote_usd_percent_change_7d
+            description: "Price percentage change in the last 7 days."
+          - name: quote_usd_percent_change_30d
+            description: "Price percentage change in the last 30 days."
+          - name: quote_usd_percent_change_60d
+            description: "Price percentage change in the last 60 days."
+          - name: quote_usd_percent_change_90d
+            description: "Price percentage change in the last 90 days."
+   
+
+
