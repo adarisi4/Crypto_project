@@ -1,6 +1,6 @@
-# ₿ crypto-data-models
+# crypto-data-models
 
-This **dbt project models cryptocurrency data** for real-time analytics, supporting dashboards that track price volatility, sentiment, dominance, scarcity, and other metrics across major tokens.
+This **dbt project models cryptocurrency data for July 3rd 2025** for real-time analytics, supporting dashboards that track price volatility, sentiment, dominance, scarcity, and other metrics across major tokens.
 
 ---
 
@@ -14,7 +14,7 @@ To answer this, I built a data pipeline that collects, cleans, models, and visua
 
 ## 🔍 Overview of What I Built
 
-- 🧩 A modular dbt project (staging → intermediate → mart) that transforms raw crypto data into analytics-ready Snowflake tables
+- 🧩 A modular dbt project (staging → marts) that transforms raw crypto data into analytics-ready Snowflake tables
 - ⚙️ Python script to retrieve data via **CoinMarketCap’s public API** (as of July 3, 2025)
 - ☁️ Data ingestion pipeline triggered using **AWS EventBridge**, storing the CSV in S3 and transforming it via Snowflake external stages
 - 🔁 dbt models to calculate:
@@ -53,4 +53,4 @@ Explore the live dashboards built using the final mart model:
 - [Dominance Category](https://public.tableau.com/app/profile/anubhav7730/viz/Crypto_Data_17519483916090/Dominance_Category?publish=yes)
 - [Price Sentiment](https://public.tableau.com/app/profile/anubhav7730/viz/Crypto_Data_17519483916090/Price_Sentiment)
 - [Market Cap Tier](https://public.tableau.com/app/profile/anubhav7730/viz/Crypto_Data_17519483916090/Market_Cap_Tier)
-- [Dilution Rat]()
+- [Dilution Ratio](https://public.tableau.com/app/profile/anubhav7730/viz/Crypto_Data_17519483916090/Dilution_Ratio)
